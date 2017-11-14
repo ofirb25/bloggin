@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css' />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bloggin</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <nav class="main-nav flex">
+                <ul>
+                    <li>
+                        <a href="#" class="logo">
+                            <span onclick="toggleMenu()" class="nav-responsive-toggle">
+                                <i class="fa fa-bars"></i>
+                            </span> Blogin
+                            <span>.</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="flex nav-hidden">
+                    <li class="flex">
+                        <a href="#">Journal</a>
+                    </li>
+                    <li class="flex">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="flex">
+                        <a href="#">Work</a>
+                    </li>
+                    <li class="flex">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-wrapper container">
+        <section class="container">
+            <div class="post-preview flex">
+                <div>
+                    <img src="img/img1.png" alt="">
+                </div>
+                <div class="content flex-column">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#" onclick="toggleModal(); return false">
+                        Continue Reading
+                    </a>
+                </div>
+            </div>
+            <div class="post-preview flex">
+                <div>
+                    <img src="img/img2.png" alt="">
+                </div>
+                <div class="content flex-column">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#" onclick="toggleModal(); return false">
+                        Continue Reading
+                    </a>
+                </div>
+            </div>
+            <div class="post-preview flex">
+                <div>
+                    <img src="img/img3.png" alt="">
+                </div>
+                <div class="content flex-column">
+                    <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    <a href="#" onclick="toggleModal(); return false">
+                        Continue Reading
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="posts-navigation container flex">
+            <a href="#">Next ⟶</a>
+            <a href="#">⟵ Previous </a>
+        </section>
+        <footer>
+            <div class="container  flex-column">
+                <!-- <div class="wrapper"> -->
+                <a href="#" class="logo">Blogin
+                    <span>.</span>
+                </a>
+                <p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+                <div class="flex">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-behance-square" aria-hidden="true"></i>
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </div>
+
+                <!-- </div> -->
+            </div>
+        </footer>
+    </div>
+    <div class="modal hidden">
+        <div class="overlay">
+            <div class="content">
+                <i class="fa fa-times modal-dismiss" onclick="toggleModal()"></i>
+                <h1>Join us to get access to latest stories</h1>
+
+                <input type="text" placeholder="Your Email goes here :)">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

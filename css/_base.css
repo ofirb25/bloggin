@@ -1,0 +1,29 @@
+html {
+    /* font-size: 1vw */
+}
+body {
+    font-family: Lato;
+    color: #606060;
+    line-height: 1.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width:740px) {
+
+}
