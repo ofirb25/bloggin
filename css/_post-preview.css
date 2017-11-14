@@ -32,14 +32,15 @@
     transition: all 0.4s;
     white-space: nowrap;
 }
-
-.post-preview a:hover {
-    width:180px;
-    color: var(--link-hover-color);
-}
-.post-preview a:hover::after {
-    content: "⟶";
-    margin-left:10px;
+@media (min-width:900px) {
+    .post-preview a:hover {
+        width:180px;
+        color: var(--link-hover-color);
+    }
+    .post-preview a:hover::after {
+        content: "⟶";
+        margin-left:10px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -89,5 +90,8 @@
         padding: 3px;
         font-size: 8pt;
             
+    }
+    .post-preview a:hover {
+        
     }
 }
