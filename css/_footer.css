@@ -31,3 +31,9 @@ footer .flex i.fa-twitter-square:hover {color:#1DA1F2;}
 footer .flex i.fa-behance-square:hover {color:#0A7EFF;}
 footer .flex i.fa-github-square:hover {color:#607D8B;}
 
+@media (max-width:650px) {
+    footer {
+        font-size:8pt;
+        height:200px;
+    }
+}
